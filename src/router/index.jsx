@@ -1,7 +1,7 @@
 import { Policy } from "../pages/policy";
 import {
   Account,
-  Home,
+  // Home,
   NotFoundPage,
   SubscriptionServices,
   Instructions,
@@ -13,10 +13,10 @@ import { Settings } from "../pages/settings";
 import { Privacy } from "../pages/privacy";
 
 const coreRoutes = [
-  {
-    path: "/",
-    component: Home,
-  },
+  // {
+  //   path: "/",
+  //   component: Home,
+  // },
   {
     path: "/account",
     component: Account,
@@ -46,7 +46,7 @@ const coreRoutes = [
     component: NotFoundPage,
   },
   {
-    path: "account-selection",
+    path: "/", // account-selection
     component: AccountSelection,
   },
   {
