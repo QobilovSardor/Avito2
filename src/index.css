@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.main {
+  min-height: calc(100vh - 80px - 85px);
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+/* colors */
+.purple {
+  color: #805ad5;
+}
+
+.bg-purple {
+  background-color: #805ad5;
+  color: #171923;
+}
+
+/* buttons */
+.link-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+  background: #805ad5;
+  width: fit-content;
+  color: white;
+  text-decoration: none !important;
+  padding: 8px 24px;
+  font-weight: 600;
+  justify-content: center;
+  transition: all 0.3s linear;
+}
+
+.link-button:hover {
+  background-color: #6b46c1;
+}
+
+.outline-link-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+  background: transparent;
+  border: 1px solid #6b46c1;
+  width: fit-content;
+  color: #6b46c1;
+  text-decoration: none !important;
+  padding: 8px 16px;
+  font-weight: 600;
+  justify-content: center;
+  transition: all 0.1s linear;
+}
+
+.outline-link-button:hover {
+  background-color: #6b46c1;
+  color: #fff;
+}
+
+.service-table tr:last-child td {
+  border: none;
+}
+.not-shadow:focus-visible{
+	box-shadow: none !important;
+}
+
+/* media query start */
+@media screen and (max-width: 1300px) {
+  .container {
+    max-width: 936px;
+  }
+		.lamp__arrow-img {
+			left: 15% !important;
+		}
+}
+
+@media screen and (max-width: 950px) {
+  .container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .link-button,
+  .outline-link-button {
+    font-size: 14px !important;
+  }
+
+  .media-full {
+    width: 100%;
+  }
+
+  .h-48 {
+    height: 48px !important;
+  }
+
+  .subscription-section .outline-link-button,
+  .subscription-section .link-button {
+    width: 100% !important;
+  }
+}
+
+td {
+  padding: 0 !important;
+}
+
+section {
+	max-width: 15em;
+	margin: 10vh auto 0;
+	background: whitesmoke;
+	padding: 0.5em 1em;
+	border-radius: 0.5em;
+	box-shadow: 4px 4px 50px rgba(104, 123, 247, 0);
+	transition: box-shadow 100ms linear;
+}
+
+section:hover {
+	box-shadow: 4px 4px 50px rgba(104, 123, 247, 0.6);
+}
+.chakra-modal__content:hover {
+	box-shadow: none;
+}
+.chakra-modal__body::-webkit-scrollbar {
+	width: 5px;
+	border-radius: 50px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #A0AEC099;
+	border-radius: 50px;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul li {
+	display: flex;
+	align-items: center;
+	cursor: move;
+	line-height: 1;
+	margin-bottom: 0.1em;
+	border-radius: 5px;
+}
+
+ul li.dropArea {
+	color: white !important;
+	background: white !important;
+	position: relative;
+}
+
+ul li.dropArea::before {
+	content: "Drop Here";
+	color: #687bf7;
+	font-size: 0.5em;
+	text-transform: uppercase;
+	width: 100%;
+	height: 100%;
+	border: 2px dashed #687bf7;
+	border-radius: 3px;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+ul li.dropArea span {
+	display: none;
+}
+
+ul li.dropArea p {
+	margin-left: 1em;
+}
+
+ul li:hover {
+	background: linear-gradient(to left, #687bf7, #72d9ef);
+	color: white;
+}
+
+ul li:hover span {
+	background-color: #79e7eb;
+}
+
+ul li span {
+	display: inline-block;
+	margin-right: 1em;
+	margin-left: 0.5em;
+	background-color: #72d9ef;
+	width: 2em;
+	height: 2em;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	color: white;
+	font-weight: bold;
+	transition: background-color 100ms linear;
+}
+
+ul li p {
+	transition: margin-left 50ms ease-in-out;
+}
+
+ul li i {
+	margin-left: auto;
+	margin-right: 1em;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0.2;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
